@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light dark;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", sans-serif;
+  background: #f6f5f2;
+  color: #1c1c1e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #faf9f6 0%, #f3f1ed 100%);
+}
+
+main {
+  width: min(720px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 72px 0 88px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 64px;
+  font-size: 15px;
+}
+
+a { color: #c94f12; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(36px, 7vw, 58px);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  margin: 44px 0 12px;
+  font-size: 22px;
+  letter-spacing: -0.015em;
+}
+
+p, li {
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.eyebrow {
+  margin-bottom: 14px;
+  color: #c94f12;
+  font-weight: 650;
+}
+
+.privacy-page .eyebrow { color: inherit; }
+
+.lead {
+  max-width: 620px;
+  margin: 0;
+  color: #646464;
+  font-size: 20px;
+}
+
+.panel {
+  margin-top: 36px;
+  padding: 24px;
+  border: 1px solid rgba(60, 60, 67, 0.12);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 14px 40px rgba(58, 45, 35, 0.06);
+}
+
+.meta { color: #777; font-size: 14px; }
+
+hr {
+  margin: 72px 0;
+  border: 0;
+  border-top: 1px solid rgba(60, 60, 67, 0.12);
+}
+
+footer {
+  margin-top: 64px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(60, 60, 67, 0.12);
+  color: #777;
+  font-size: 14px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a { transition: color 160ms ease-out; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { background: #111; color: #f2f2f7; }
+  body { background: linear-gradient(180deg, #171614 0%, #0f0f0f 100%); }
+  .lead, .meta, footer { color: #aaa; }
+  .panel {
+    background: rgba(36, 35, 33, 0.78);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+  }
+  hr { border-top-color: rgba(255, 255, 255, 0.1); }
+}

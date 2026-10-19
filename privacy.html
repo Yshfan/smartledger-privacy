@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Smart Ledger privacy policy / 一言记账隐私政策">
+  <title>Privacy Policy · Smart Ledger</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="privacy-page">
+  <main>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home / 首页</a>
+      <a href="privacy.html" aria-current="page">Privacy / 隐私</a>
+      <a href="support.html">Support / 支持</a>
+    </nav>
+
+    <article lang="en">
+      <p class="eyebrow">Smart Ledger</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: October 19, 2026</p>
+
+      <h2>1. Data storage</h2>
+      <p>Bills, budgets, categories, trips, and recurring bills are stored locally on the user’s device by default, and in the user’s own iCloud (CloudKit) only if the user enables sync. Smart Ledger does not require a developer account or separate registration.</p>
+
+      <h2>2. iCloud sync</h2>
+      <p>Only when the user enables iCloud sync or manually uploads a backup is a complete ledger backup stored in that user’s private CloudKit database. It is used to merge and restore data across the user’s own devices. The developer does not use this data for advertising, tracking, or profiling.</p>
+
+      <h2>3. AI recognition, screenshots, and tracking</h2>
+      <p>“AI Smart Recognition” is an optional feature for Pro members only. It is off by default and is turned on only after the user reads the in-app explanation and explicitly agrees. When it is off, entries and screenshots are recognized only by local rules on the device.</p>
+      <p>When it is on, Smart Ledger first tries on-device Apple Intelligence where available. If further help is needed, the entry text the user typed or spoke, or the text extracted on the device from a payment screenshot (never the screenshot image itself), together with locally detected hints such as candidate amounts, is sent to the developer’s server on Tencent CloudBase (mainland China) and processed by the third-party AI provider DeepSeek to recognize the amount, merchant, category, and time. DeepSeek processes this content under its own privacy policy.</p>
+      <p>Content sent for AI recognition, and the recognition result, are used only for that single recognition. They are not written to our database or our server logs. To avoid charging the same request twice, a result may be held in server memory for up to 30 seconds and is then discarded. To run quotas and prevent abuse, the server keeps only an anonymous random account identifier, anonymous usage counts and quota information, and technical records such as error codes, response times, and token counts (none of which contain entry text, amounts, merchants, or card numbers), plus the results of Apple App Attest device checks and App Store (StoreKit) purchase verification. This data is not used for advertising or tracking and is not sold.</p>
+      <p>Users can turn AI Smart Recognition off at any time in Settings. Smart Ledger contains no advertising SDK and performs no cross-app tracking.</p>
+
+      <h2>4. Import and export</h2>
+      <p>Users may export a complete JSON backup or CSV/TXT bill files and may choose a backup file to restore. The user controls where those files are stored and with whom they are shared through the system file picker and share sheet.</p>
+
+      <h2>5. Deletion and opt-out</h2>
+      <p>Users can delete individual bills in the App. Under “Me → iCloud Sync,” users can disable automatic sync and delete the cloud backup without deleting the local ledger. Removing the App handles local App data according to iOS system behavior.</p>
+
+      <h2>6. Policy updates</h2>
+      <p>If a future release changes how data is handled, this policy and the App Store privacy disclosure will be updated before that change is released.</p>
+    </article>
+
+    <hr>
+
+    <article lang="zh-CN">
+      <p class="eyebrow">一言记账</p>
+      <h1>隐私政策</h1>
+      <p class="meta">生效日期：2026 年 10 月 19 日</p>
+
+      <h2>1. 数据保存</h2>
+      <p>账单、预算、分类、行程和周期账单默认保存在用户设备本地；只有用户开启同步时，才会保存到用户本人的 iCloud（CloudKit）。一言记账不要求注册开发者账号。</p>
+
+      <h2>2. iCloud 同步</h2>
+      <p>只有当用户主动启用 iCloud 同步或手动上传时，完整账本备份才会保存到用户本人的 CloudKit 私有数据库，用于本人设备之间的合并与恢复。开发者不会用该数据进行广告、跟踪或用户画像。</p>
+
+      <h2>3. AI 智能识别、截图与跟踪</h2>
+      <p>“AI 智能识别”是仅限 Pro 会员的可选功能，默认关闭，只有用户阅读 App 内说明并明确同意后才会开启。关闭时，记账文字和截图只由设备上的本地规则识别。</p>
+      <p>开启后，一言记账会优先在可用的设备上使用 Apple Intelligence 本机识别。如仍需帮助，会把用户输入或说出的记账文字，或在设备上从支付截图中提取的文字（绝不发送截图图片本身），连同本地识别出的候选金额等提示，发送到开发者部署在腾讯云 CloudBase（中国大陆）的服务器，由第三方 AI 服务商 DeepSeek 处理，用于识别金额、商户、分类和时间。DeepSeek 按其自身的隐私政策处理这些内容。</p>
+      <p>为 AI 识别发送的内容及识别结果只用于该次识别，不会写入我们的数据库或服务器日志。为避免同一请求被重复计费，识别结果最多在服务器内存中暂存 30 秒，随后丢弃。为了额度管理和防止滥用，服务器只保留匿名随机账户标识、匿名使用次数和额度信息，以及错误代码、响应耗时、用量（token）统计等技术记录（均不含记账文字、金额、商户或卡号），以及 Apple App Attest 设备校验和 App Store（StoreKit）购买验证的结果。这些数据不用于广告或跟踪，也不会出售。</p>
+      <p>用户可随时在“设置”中关闭 AI 智能识别。一言记账不包含广告 SDK，也不进行跨 App 跟踪。</p>
+
+      <h2>4. 导入与导出</h2>
+      <p>用户可主动导出 JSON 完整备份或 CSV / TXT 账单文件，也可主动选择备份文件进行恢复。文件存放位置及分享对象由用户通过系统文件选择器和分享面板决定。</p>
+
+      <h2>5. 删除与退出</h2>
+      <p>用户可在 App 内删除单笔账单；在“我的 → iCloud 同步”中可关闭自动同步并删除云端备份，该操作不会删除本机账本。卸载 App 会按 iOS 的系统规则处理本地 App 数据。</p>
+
+      <h2>6. 政策更新</h2>
+      <p>如后续版本改变数据处理方式，本政策和 App Store 隐私信息将在相应版本发布前更新。</p>
+    </article>
+
+    <footer>© 2026 Smart Ledger / 一言记账 · <a href="support.html">Support / 获取支持</a></footer>
+  </main>
+</body>
+</html>
